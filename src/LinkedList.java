@@ -1,4 +1,8 @@
 public class LinkedList<T> {
+    public LinkedList() {
+
+    }
+
     class Node<T> {
         T data;
         Node<T> next;
@@ -9,6 +13,7 @@ public class LinkedList<T> {
         }
     }
     Node<T> head;
+    int size;
 
     LinkedList(T data){
         this.head = new Node<T>(data);
